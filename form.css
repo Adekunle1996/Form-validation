@@ -17,24 +17,28 @@ body{
     width: 100%;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .header{
     background-color:#aaa;
     padding:25px 30px;
     color:#fff;
+    text-align: center;
 }
 .form{
     padding:25px 30px;
 }
 .form .form-control{
     margin-bottom: 25px;
+    position: relative;
 }
 .form .form-control input{
-    width:60%;
+    width:100%;
+    
 }
 
 button{
-    width:61%;
+    width:100%;
     padding: 3PX;
     display: inline-block;
     text-align: center;
@@ -48,6 +52,9 @@ button{
 #name-check, #phoneNo-check, #email-check{
     color:red;
     font-size: 13px;
+    position:absolute;
+    right: 5%;
+    top:10%;
 }
  #name-check i, #phoneNo-check i, #email-check i{
      color: green;

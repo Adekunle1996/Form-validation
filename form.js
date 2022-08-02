@@ -19,8 +19,10 @@ function validate(){
         return false;
         
     }else{
-        nameCheck.innerHTML="<i class='fas fa-check-circle'></i>";
+        nameCheck.innerHTML="<i class='fas fa-check'></i>";
+        errorMessage1.remove();
         return true;
+
     }
 };
 
@@ -35,7 +37,8 @@ function validatePhoneNo(){
         phoneCheck.innerHTML="invalid";
         errorMessage2.innerHTML="input should contain only numbers of 11 characters"
     }else{
-        phoneCheck.innerHTML="<i class='fas fa-check-circle'></i>";
+        phoneCheck.innerHTML="<i class='fas fa-check'></i>";
+        errorMessage2.remove();
         return true;
     }
 }
@@ -52,7 +55,8 @@ function validateEmail(){
         errorMessage3.innerHTML="input should match this text123.-_@gmail.com";
         return false;
     }else{
-        emailCheck.innerHTML="<i class='fas fa-check-circle'></i>";
+        emailCheck.innerHTML="<i class='fas fa-check'></i>";
+        errorMessage3.remove();
         return true;
     }
 }
