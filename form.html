@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practices1</title>
+    <link rel="stylesheet" href="practices.css">
+    <link rel="stylesheet" href="/font-icons/css/all.css">
+</head>
+<body>
+   <div class="form-container">
+    <div class="header">
+      <h2>Creat Account</h2>
+    </div>
+  <form  action="wellcomepage.html" class="form">
+    <div class="form-control">
+    <input type="text" name="name" placeholder="fullName" id="client-name" onkeyup="validate()">
+    <span id="name-check"></span>
+    <small id="error-message1"></small>
+    </div>
+
+    <div class="form-control">
+    <input type="text" name="PhoneNo" placeholder="phoneNo" id="client-phoneNo" onkeyup="validatePhoneNo()">
+    <span id="phoneNo-check"></span>
+    <small id="error-message2"></small>
+   </div>
+
+   <div class="form-control">
+    <input type="text" name="email" placeholder="email" id="client-email" onkeyup="validateEmail()">
+    <span id="email-check"></span>
+    <small id="error-message3"></small>
+   </div>
+
+   <div class="form-control">
+    <button type="submit" onclick="return validateSubmit()">submit</button>
+    </div>
+  </form>
+  </div>
+  <script src="practices.js"></script>
+</body>
+</html> 
