@@ -20,7 +20,6 @@ function validate(){
         
     }else{
         nameCheck.innerHTML="<i class='fas fa-check'></i>";
-        errorMessage1.remove();
         return true;
 
     }
@@ -38,7 +37,6 @@ function validatePhoneNo(){
         errorMessage2.innerHTML="input should contain only numbers of 11 characters"
     }else{
         phoneCheck.innerHTML="<i class='fas fa-check'></i>";
-        errorMessage2.remove();
         return true;
     }
 }
@@ -56,7 +54,6 @@ function validateEmail(){
         return false;
     }else{
         emailCheck.innerHTML="<i class='fas fa-check'></i>";
-        errorMessage3.remove();
         return true;
     }
 }
